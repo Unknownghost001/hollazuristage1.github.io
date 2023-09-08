@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+    <script src="/index.js" defer></script>
+</head>
+<body>
+    <head>
+        <nav>
+            <ul class="nav-container">
+                <li><a href="https://hngix.slack.com">
+                    <img src="/HNGx.png
+                    " alt="HNGx-Logo" class="logo"></a>
+                </li>
+                <li><a href="#profile">Slack Profile</a></li>
+                <li><a href="#date">Date/Time</a></li>
+                <li><a href="#track" data-testid="myTrack">Track</a></li>
+                <li><a href="https://github.com/Unknownghost001"  class="btn">GitHub</a></li>
+            </ul>
+
+        </nav>
+    </head>
+    <body>
+        <main>
+            <section class="container">
+                <div class="profile" id="profile">
+                    <img src="/Slackpic.jpeg" alt="Holla" data-testid="slackDisplayImage">
+                    <ul>
+                    <li data-testid="slackUserName">Name:  Babatunde .O Ekemode</li>
+                    <li>Username: Holla</li>
+                    <li>Gender: Male</li>
+                    <li id="track">Track: Frontend Track</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="container" id="date">
+                <p>Today is <span id="day" data-testid="curentDayOfTheWeek"></span> hope you have check your schedule</p>
+                <p>The time is: <span id="time" data-testid="currentUTCTime"></span></p>
+                <p>Check out the source code for this task on my  <a href="https://github.com/Unknownghost001" class="btn" data-testid="githubURL">GitHub</a></p>
+            </section>
+        </main>
+    </body>
+</body>
+</html>
