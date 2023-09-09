@@ -1,44 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/index.css">
-    <script src="/index.js" defer></script>
+    <link rel="icon" href="Slackpic.jpeg">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>HNG Frontend Stage One</title>
 </head>
 <body>
-    <head>
-        <nav>
-            <ul class="nav-container">
-                <li><a href="https://hngix.slack.com">
-                    <img src="/HNGx.png
-                    " alt="HNGx-Logo" class="logo"></a>
-                </li>
-                <li><a href="#profile">Slack Profile</a></li>
-                <li><a href="#date">Date/Time</a></li>
-                <li><a href="#track">Track</a></li>
-                <li><a href="https://github.com/Unknownghost001/hollazuristage1.github.io"  class="btn" target="_blank" data-testid="githubURL" >GitHub</a></li>
-            </ul>
+    <div class="container">
+        <div class="bio">
+            <h1 data-testid="slackUserName">Babatube .O Ekemode</h1>
+            <img src="Slackpic.jpeg" alt="">
+        </div>
+        
+        <div class="daytime">
+            <h2 data-testid="currentDayOfTheWeek"></h2>
+            <h3 data-testid="currentUTCTime"></h3>
+        </div>
 
-        </nav>
-    </head>
-    <body>
-        <main>
-            <section class="container">
-                <div class="profile" id="profile">
-                    <img src="/Slackpic.jpeg" alt="Holla" data-testid="slackDisplayImage">
-                    <ul>
-                    <li data-testid="slackUserName">Babatunde .O Ekemode</li>
-                    <li>
-                          <span id="day" data-testid="curentDayOfTheWeek"></span>
-                          <span id="time" data-testid="currentUTCTime"></span>
-                    </li>
-                    <li id="track" data-testid="myTrack">Frontend Track</li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-    </body>
+        <div class="track">
+            <h3 data-testid="myTrack">Frontend</h3>
+        </div>
+        
+        <a href="https://github.com/Unknownghost001/hollazuristage1.github.io" target="_blank" data-testid=“githubURL”>Github Url</a>
+
+    </div>
 </body>
 </html>

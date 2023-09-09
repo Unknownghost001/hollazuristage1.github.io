@@ -1,12 +1,5 @@
-const days = [
-    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
-];
-
-var dayTime = new Date();
-var day = dayTime.getDay();
-var time = `${dayTime.getUTCHours()} : ${dayTime.getMinutes()}`;
-
-var today = days[day];
-
-document.getElementById("day").innerHTML = today;
-document.getElementById("time").innerHTML = time;
+const day = document.querySelector('[data-testid="currentDayOfTheWeek"]');
+const time = document.querySelector('[data-testid="currentUTCTime"]');
+const timeNow = `${new Date().getUTCHours()}:${new Date().getUTCMinutes()}:${new Date().getSeconds()}`;
+time.innerHTML = timeNow;
+day.innerHTML = new Date().toLocaleString("en-US", { weekday: "long" });
