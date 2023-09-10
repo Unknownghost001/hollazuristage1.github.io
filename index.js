@@ -1,4 +1,4 @@
-// alert(7)
+/*// alert(7)
 // Function to update the current UTC time
 function updateUTCTime() {
     const currentDate = new Date();
@@ -20,5 +20,37 @@ updateUTCTime();
 updateDayOfWeek();
 
 // Set intervals to update the time and day of the week every second
+setInterval(updateUTCTime, 1000);
+setInterval(updateDayOfWeek, 1000);
+*/
+
+function updateDayOfWeek() {
+    const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+    ];
+    const dayTime = new Date();
+    const day = dayTime.getDay();
+    const today = days[day];
+
+    document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent = today;
+}
+
+function updateUTCTime() {
+    const dayTime = new Date();
+    time = `${dayTime.getTime()}`;
+    document.querySelector('[data-testid="currentUTCTime"]').textContent = time;
+
+
+}
+
+updateUTCTime();
+updateDayOfWeek();
+
 setInterval(updateUTCTime, 1000);
 setInterval(updateDayOfWeek, 1000);
